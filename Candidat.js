@@ -1,5 +1,15 @@
-import react from React;
-import useState from React;
+import React, { useState } from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
+import axios from "axios";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import React, { useState } from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
+import axios from "axios";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 function Candidat(nom) {
   this.nom = nom;
@@ -12,7 +22,7 @@ function InputForm(){
 
     const handleChange = (event) => setValue(event.target.value);
     const handleSubmit = (event) => {
-        Candidat value = new Candidat(value);
+        Candidat(value);
         alert('Un candidat a été ajouter à la course aux votes: ' + value);
 
         event.preventDefault();
