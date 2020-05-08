@@ -7,18 +7,13 @@ import Jumbotron from "react-bootstrap/Jumbotron";
  
 function App() {
  
-function Candidat(nom) {
-  this.nom = nom;
-  }
 
-  import React, {useState} from 'react';
-
-function InputForm(){
     const [value, setValue] = useState('');
 
     const handleChange = (event) => setValue(event.target.value);
     const handleSubmit = (event) => {
-        Candidat(value);
+    
+
         alert('Un candidat a été ajouter à la course aux votes: ' + value);
 
         event.preventDefault();
@@ -33,6 +28,4 @@ function InputForm(){
             <input type="submit" value="Submit" />
         </form>
     );
-}
-}
-export default InputForm;
+}export default App;
