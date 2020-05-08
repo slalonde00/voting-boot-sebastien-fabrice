@@ -1,7 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
+import ReactDOM from 'react-dom';
+import Jumbotron from "react-bootstrap/Jumbotron";
+ 
 function App() {
  
 function Candidat(nom) {
