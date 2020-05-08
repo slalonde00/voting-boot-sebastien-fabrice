@@ -3,24 +3,33 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+ 
+function Candidat(nom) {
+  this.nom = nom;
+  }
 
-export default App;
+  import React, {useState} from 'react';
+
+function InputForm(){
+    const [value, setValue] = useState('');
+
+    const handleChange = (event) => setValue(event.target.value);
+    const handleSubmit = (event) => {
+        Candidat(value);
+        alert('Un candidat a été ajouter à la course aux votes: ' + value);
+
+        event.preventDefault();
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Name:
+                <input type="text" value={value} onChange={handleChange} />
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    );
+}
+}
+export default InputForm;
