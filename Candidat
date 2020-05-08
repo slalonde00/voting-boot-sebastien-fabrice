@@ -1,6 +1,8 @@
-function Candidat(nom, prenom) {
+import react from React;
+import useState from React;
+
+function Candidat(nom) {
   this.nom = nom;
-  this.prenom=prenom
   }
 
   import React, {useState} from 'react';
@@ -10,7 +12,9 @@ function InputForm(){
 
     const handleChange = (event) => setValue(event.target.value);
     const handleSubmit = (event) => {
-        alert('A name was submitted: ' + value);
+        Candidat value = new Candidat(value);
+        alert('Un candidat a été ajouter à la course aux votes: ' + value);
+
         event.preventDefault();
     }
 
