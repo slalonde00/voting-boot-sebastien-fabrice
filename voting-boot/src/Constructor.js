@@ -3,10 +3,15 @@ import React, { useState } from 'react';
 
 class Candidat extends React.Component {
 
-    constructor(props) {
+    /*constructor(props) {
         super(props);
-   this.state = {value: ''}
+   this.state = {nom: ''}
       }
+*/
+nom='';
 
+      Candidat(nom){
+        this.nom=nom;
+      }
       
     }
