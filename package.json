@@ -2,10 +2,7 @@
   "name": "voting-boot-sebastien-fabrice",
   "version": "1.0.0",
   "description": "Développez une application React pour la création d'une borne de vote. La borne de vote doit avoir les capacités suivantes:",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HugoCodeStar/voting-boot-sebastien-fabrice.git"
@@ -17,9 +14,35 @@
   },
   "homepage": "https://github.com/HugoCodeStar/voting-boot-sebastien-fabrice#readme",
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.5.1",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
   },
-  "devDependencies": {}
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
