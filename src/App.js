@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from "react-bootstrap/Jumbotron";
+//Ceci est notre version finale
 
 function Candidat(props) {
   
@@ -70,7 +71,7 @@ function Vote(props) {
       var element = props.list[i];
       var nomCandidat = element[0];
       //Ça veut dire que le bouton voter cliqué est pour ce candidat
-      if(nomCandidat == e.target.id){
+      if(nomCandidat === e.target.id){
         var vote = element[1];
         vote += 1;
         props.list[i][1] = vote;  //mettre à jour le vote
@@ -170,13 +171,12 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          
           {
-            varComponent == "candidat"
+            varComponent === "candidat"
             ? <Candidat list={listCandidat} val={val} setList={setListCandidat} 
                         setVal={setVal} notreComponent={notreComponent}/>
             : 
-            (varComponent == "vote"
+            (varComponent === "vote"
             ? <Vote list={listCandidat} notreComponent={notreComponent} 
               setGagant={setGagant} />
             : <Gagnant list={listCandidat} notreComponent={notreComponent} 
